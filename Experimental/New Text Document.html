@@ -1,0 +1,14 @@
+
+	<a download="text.txt" id="ll">text.txt</a>
+	<script>
+
+
+	var text = 'переносы строк\r\n\r\n\r\n\r\nпереносы строк';
+
+	var BlobBlob = new Blob([text], {type : 'text/plain'});
+
+	ww = URL.createObjectURL(BlobBlob);
+
+	ll.href = ww;
+
+	</script>
